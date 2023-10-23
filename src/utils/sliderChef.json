@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Melisa Horward",
+        "position": "Head Chef",
+        "image": "./chef1.jpg"
+    },
+    {
+        "name": "Kelvin Hart",
+        "position": "Asistant Head Chef",
+        "image": "./chef2.jpg"
+    },
+    {
+        "name": "Yin Quan",
+        "position": "Major Chef",
+        "image": "./chef3.jpg"
+    },
+    {
+        "name": "Eric Hills",
+        "position": "Asistant Major Chef",
+        "image": "./chef4.jpg"
+    },
+    {
+        "name": "Mike Richardson",
+        "position": " Chef",
+        "image": "./chef5.jpg"
+    },
+    {
+        "name": "Charly white",
+        "position": " Chef",
+        "image": "./chef6.jpg"
+    }
+]

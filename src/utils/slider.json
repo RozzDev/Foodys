@@ -1,0 +1,14 @@
+[
+    {
+        "image": "/bg2.jpg",
+        "name": "Enjoy Your Meal",
+        "detail": "Have a taste of our meal and enjoy your day",
+        "button": "Get Started"
+    },
+    {
+        "image": "/bg3.jpg",
+        "name": "Enjoy Your Snacks",
+        "detail": "Have a taste of our snacks and enjoy your day",
+        "button": "Get Started"
+    }
+]

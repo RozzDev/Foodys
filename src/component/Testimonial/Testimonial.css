@@ -1,0 +1,72 @@
+.t-wrapper {
+    font-family: poppins;
+    background: var(--whitish);
+}
+.t-wrapper::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background: #fff;
+    height: 10em;
+    clip-path: polygon(0 88%, 110% 0, 100% 110%, 0 110%);
+    z-index: 99;
+}
+.t-set::after {
+    background: var(--whitish);
+}
+.t-container {
+    padding: 5rem;
+}
+.t-container .swiper {
+    width: 50%;
+}
+.t-testi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+.t-para {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.t-other {
+    display: flex;
+    gap: 1rem;
+}
+.t-other img {
+    width: 5rem;
+    height:5rem;
+    border-radius: 50%;
+}
+.spans {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.spans span:nth-child(1) {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.spans span:nth-child(2) {
+    opacity: 0.6;
+}
+@media (max-width: 1024px) {
+    .t-container .swiper {
+        width: 70%;
+    }
+    @media (max-width:840px) {
+        .t-container .swiper {
+            width: 100%;
+        }
+        @media (max-width: 452px) {
+            .t-container {
+                padding: 1rem;
+            }
+        }
+    }
+    
+}

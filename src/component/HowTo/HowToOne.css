@@ -1,0 +1,166 @@
+.ht-wrapper {
+    font-family: poppins;
+}
+.ht-container {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    gap: 5rem;
+}
+.ht-left {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 2rem;
+}
+.ht-left h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.ht-left p {
+    font-size: 0.9em;
+    color: #505050;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.comment-init {
+    display: flex;
+    gap: 1rem;
+}
+.comment-init img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.commentS {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.commentS h5 {
+    color: #505050;
+}
+.commentS button {
+    width: 5rem;
+    padding: 0.5rem;
+    border: none;
+    color: #fff;
+    background: var(--orange);
+}
+.commentL {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.commentL form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.commentL input {
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+.commentL textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+.commentL button {
+    height: 3rem;
+    width: 9rem;
+    padding:0 1rem;
+    border: none;
+    color: #fff;
+    background: var(--orange);
+    text-transform: uppercase;
+}
+.ht-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+}
+.author, .category, .paragraph {
+    width: 100%;
+    padding: 2rem;
+    background: var(--whitish);
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.author img {
+    border-radius: 50%;
+    width: 7rem;
+    height: 8rem;
+    object-fit: cover;
+}
+.span-r{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.span-rs{
+    font-size: 0.9rem;
+    color: #505050;
+}
+.author button {
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.author button:hover {
+    opacity: 0.8;
+}
+.cat-con {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.span-cat {
+    display: flex;
+    justify-content: space-between;
+}
+.meal {
+    color: var(--orange);
+}
+hr {
+    color: #a3a3a3;
+}
+@media (max-width: 900px) {
+    .ht-container {
+        padding: 4rem;
+        gap: 2rem;
+    }
+    @media (max-width: 800px) {
+        .ht-container {
+            padding: 2rem;
+            gap: 3rem;
+        }
+        @media (max-width: 768px) {
+            .ht-container {
+                flex-direction: column;
+            }
+            .ht-left , .ht-right {
+                width: 100%;
+            }
+        }
+    }
+}

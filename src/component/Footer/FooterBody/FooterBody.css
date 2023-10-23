@@ -1,0 +1,59 @@
+.f-container {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    font-family: poppins;
+    margin: auto;
+    gap: 4rem;
+}
+.first-f, .second-f{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 30%;
+}
+.third-f {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+}
+.third-f span {
+    color: var(--orange);
+}
+.ones {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000 !important;
+}
+.ones-p {
+    color: rgb(85, 85, 85);
+    font-size: 0.9rem;
+}
+.social {
+    display: flex;
+    gap: 2rem;
+}
+.up {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.ones-h {
+    font-weight: 350;
+}
+.spans-down {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+@media (max-width: 700px) {
+    .f-container {
+        padding: 2rem;
+        flex-direction: column;
+    }
+    .first-f, .second-f, .third-f {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

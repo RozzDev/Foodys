@@ -1,0 +1,74 @@
+.n-wrapper {
+    width: 100%;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    display: flex;
+}
+.n-container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    padding: 5rem;
+}
+.n-logo {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    font-family: inter;
+}
+a {
+    color: #fff;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--orange);
+}
+.n-menu {
+    display:  flex;
+    gap: 2rem;
+}
+.dd-menu {
+    display: none;
+}
+.icon {
+    display: none;
+}
+@media (max-width: 800px) {
+    .n-container {
+        padding: 2rem ;
+        background: #000;
+    }
+    .n-menu {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        top: 4rem;
+        right: 0;
+        padding: 3rem 2rem;
+        background: #000;
+        transition: 500ms ease-in;
+        z-index: -9;
+    }
+    .icon {
+        display: block;
+    }
+    @media (max-width: 518px) {
+        .n-container {
+            padding: 2rem ;
+        }
+        .n-logo {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 389px){
+            .n-container {
+                padding: 1rem;
+            }
+            .button {
+                padding: 0rem 1rem !important;
+            }
+        }
+    }
+}

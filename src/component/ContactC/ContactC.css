@@ -1,0 +1,94 @@
+.C-wrapper {
+    background: #fff;
+    font-family: poppins;
+}
+.C-wrapper::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background: var(--whitish);
+    height: 10em;
+    clip-path: polygon(0 88%, 110% 0, 100% 110%, 0 110%);
+    z-index: 99;
+}
+.C-container {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    margin: auto;
+    gap: 4rem;
+}
+.C-left {
+    width: 45%;
+}
+.C-left form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.C-left form input{
+    outline: none;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.C-left form textarea {
+    border: 1px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+.C-left button {
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    color: #fff;
+    background: var(--orange);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.n-phone {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.name-n, .phone-n {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.C-right {
+    width: 45%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+} 
+.C-right .spot {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: #696969;
+}
+@media (max-width:900px) {
+    .C-container {
+        flex-direction: column;
+    }
+    .C-left, .C-right {
+        width: 100%;
+    }
+    @media (max-width:452px) {
+        .C-container {
+            padding: 2rem;
+        }
+        .n-phone {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .name-n, .phone-n {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+:root {
+  --orange: #ffa500;
+  --whitish: rgb(238, 238, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.innerWidth {
+  width: 100%;
+}
+.paddings {
+  padding: 5rem;
+}
+.button {
+  font-weight: 500;
+  height: 2.1rem;
+  padding: 0rem 1.4rem;
+  color: #fff;
+  background: var(--orange);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.orange {
+  color: var(--orange);
+}

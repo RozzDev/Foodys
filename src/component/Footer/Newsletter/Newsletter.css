@@ -1,0 +1,85 @@
+.N-wrapper {
+    font-family: poppins;
+}
+.N-container {
+    padding: 5rem;
+} 
+.N-bodys {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    gap: 1.3rem;
+}
+.N-bodys span:nth-child(1) {
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--orange);
+
+}
+.N-bodys span:nth-child(2) {
+    font-weight: 400;
+    color: rgb(59, 59, 59);
+}
+.N-body {
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+    width: 100%;
+}
+.N-body input {
+    width: 70%;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    caret: none;
+}
+.N-body button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    background: var(--orange);
+    border: none;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+.N-body button:hover {
+    opacity: 0.8;
+}
+.N-body input:focus {
+    border: 2px solid var(--orange);
+    outline: none;
+}
+@media (max-width: 820px) {
+    .N-container {
+        padding: 2rem;
+    }
+    .N-body input {
+        width: 100%;
+    }
+    .N-bodys {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .N-bodys {
+        width: 100%;
+    }
+    @media (max-width: 400px) {
+        .N-body button {
+            width: 6rem;
+            height: 3rem;
+            font-size: 0.8rem;
+        }
+        .N-body input {
+            width: 80%;
+            padding: 1rem;
+            font-size: 1rem;
+            caret: none;
+        }
+        .N-body {
+           gap: 1rem;
+        }
+    }
+}

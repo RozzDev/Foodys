@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Strawberry Cake",
+        "price": "$12.50",
+        "image": "/special1.jpg"
+    },
+    {
+        "name": "Sweet Pie",
+        "price": "$12.50",
+        "image": "/special2.jpg"
+    },
+    {
+        "name": "Cake Nuts",
+        "price": "$12.50",
+        "image": "/special3.jpg"
+    },
+    {
+        "name": "Roasted Meat",
+        "price": "$12.50",
+        "image": "/special4.jpg"
+    }
+]

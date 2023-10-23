@@ -1,0 +1,148 @@
+.h-wrapper {
+    overflow: hidden;
+}
+.body {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    font-family: poppins;
+}
+.body > img {
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    object-fit: cover;
+}
+.words {
+    position: absolute;
+    z-index: 8;
+    background: transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 10em;
+}
+.words span {
+    text-align: center;
+}
+.an {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.h-word {
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.d-word {
+    font-weight: 500;
+    font-size: 2rem;
+}
+.d-words {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #c4c4c4;
+    text-shadow: #000 0px 5px 5px;
+}
+.words button {
+    width: 20%;
+    height: 3rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: auto;
+    color: #fff;
+    background: transparent;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    
+}
+.words button:hover {
+    color: var(--orange);
+    background: #fff;
+}
+.b-buttons {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    z-index: 99;
+    background: transparent;
+
+}
+.slidesss {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+.hero::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background: var(--whitish);
+    height: 10em;
+    clip-path: polygon(0 88%, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+}
+.hh::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background: #fff;
+    height: 10em;
+    clip-path: polygon(0 88%, 100% 0, 100% 100%, 0 100%);
+}
+@media (max-width: 800px) {
+    .words{
+        padding: 0 6em;
+    }
+    .h-word {
+        font-size: 3rem;
+    }
+    .d-word, .d-words {
+        font-size: 1.2rem;
+    }
+    .words button {
+        width: 40%;
+    }
+    .b-buttons {
+        padding: 0rem;
+    }
+    @media (max-width: 574px) {
+        .hero::after {
+            display: none;
+        }
+        .hh::after {
+            display: none;
+        }
+        .words {
+            padding: 0 4em;
+            gap: 4rem;
+        }
+        .h-word {
+            font-size: 2rem;
+        }
+        .d-word, .d-words {
+            font-size: 1rem;
+        }
+        .words button {
+            width: 60%;
+        }
+    }
+}
